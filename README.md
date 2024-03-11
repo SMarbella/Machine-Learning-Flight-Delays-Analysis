@@ -25,6 +25,9 @@ The flight dataset contains information about all flights that departed in 2013 
 - `hour, minute`: Time of the scheduled departure broken into hours and minutes.
 - `time_hour`: Scheduled date and hour of the flight.
 
+## Retrieved table from
+https://cran.r-project.org/web/packages/nycflights13/nycflights13.pdf
+
 ## Objectives
 The goals of the analysis are to develop a machine learning model that predicts the duration of flight delays in various airports in New York City. The methods I used for data exploration are a linear regression model to calculate the correlation between different variables, an indicator that categorizes delayed and early flights, dodged bar plots that display the on-time flight performance between the airlines, airports, and number of flights. The main results show that no matter how many flights an airport receives and an airline delivers, there will always be a large proportion of flight delays. The main results obtained the existing relationships between the delay predictor variable and the response variables. It also displayed the number of New York City delayed flights from different airlines, the top 10 airport destinations, the month of the year, and the total number of delayed and early flights.
 
