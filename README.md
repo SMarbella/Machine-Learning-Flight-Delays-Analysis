@@ -71,21 +71,19 @@ In Figure 6, this figure shows the flights traveling from New York City to the t
 ## Machine Learning Model Results
 Based on the data used to create the graphs above, I split the data into two sets: training and testing data. 70% of the original data went to the training data while the rest went to the testing data. I developed a logistic machine-learning model that trained on the training data to make predictions that were supposed to be similar to the testing data. The calculations for the correct predictions are based on whether or not the column value and row value match diagonally.
 
-  predictions
-        early delayed
-early     972 56505
-delayed  1241 39344
+
+![image](https://github.com/SMarbella/Machine-Learning-Flight-Delays-Analysis/assets/92709384/9fc39404-a0c0-491d-8d26-996566f78b27)
 
 The logistic machine learning model is ineffective in predicting uncertainties that cause flight delays. There was a total of 98,062 flights in New York City in 2013. When a flight is early, the model predicts the flight correctly 971/(972 + 1,241) = 43.88% of the time. When a flight is delayed, the model predicts the flight correctly 39,344/(56,505 + 39,344) = 41.05% of the time. The error rate is (56,505 + 1,241)/98,062 = 58.89%.
 
 95% confidence intervals between the delay and the distance, origin, and carrier.
-        fit       lwr      upr
- 1 36.44596 -124.3232 197.2151
+
+![image](https://github.com/SMarbella/Machine-Learning-Flight-Delays-Analysis/assets/92709384/0145770b-75f0-488f-b270-c84997056c4b)
 
 The fit variable indicates that the predicted variable is about 36.45. The range between the lower and upper bound is approximately the same as my colleague's lower and upper bound. It is the range where the model thinks most of the observations would fit in 95% of the time. The difference is that my predicted variable is higher by about 14 units.
 
 ## Conclusions
-In conclusion, my model is ineffective in predicting uncertainties due to high error rates from uncertainties that cause flight delays. My model is 58.89% wrong due to the variety between the variables. Each month in 2013 had uncertainties between the flights from New York to their destinations. The proportion of delayed and early flights varied throughout the year. The summer months of June and July have almost equal numbers of early and delayed flights. The fall months of September, October, and November mostly had early flights. September had the fewest number of delayed flights while December had the most delayed flights. December is the only month with more delayed flights than early flights due to the Christmas holiday season and heavier air traffic levels. The range between the lower and upper bound is approximately the same as my collaborator's lower and upper bound. The difference is that my predicted variable is higher by about 14 units.
+In conclusion, my logistic machine learning model is ineffective in predicting uncertainties due to high error rates from uncertainties that cause flight delays. My model is 58.89% wrong due to the variety between the variables. Each month in 2013 had uncertainties between the flights from New York to their destinations. The proportion of delayed and early flights varied throughout the year. The summer months of June and July have almost equal numbers of early and delayed flights. The fall months of September, October, and November mostly had early flights. September had the fewest number of delayed flights while December had the most delayed flights. December is the only month with more delayed flights than early flights due to the Christmas holiday season and heavier air traffic levels. The range between the lower and upper bound is approximately the same as my collaborator's lower and upper bound. The difference is that my predicted variable is higher by about 14 units.
 
 I approached the issue of flight delays using a logistic machine learning model. I created a delay indicator in a separate variable that indicates whether or not a flight is delayed by adding the arrival and departure delay times together. I explored the data visually to understand the possible underlying causes of flight delays. The flight indicator color-coded the flights in the graphs, where red represents delayed flights while green represents early flights. Different airlines and airports have different flight delays. Seasons are a possible factor for causing flight delays due to higher air traffic in the fall months and December. I also created summary calculations to find the variables that had significant p-values with the delay indicator.
 
