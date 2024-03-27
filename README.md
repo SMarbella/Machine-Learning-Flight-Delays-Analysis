@@ -37,3 +37,14 @@ The goals of the analysis are to develop a machine learning model that predicts 
 - **Figure 1.** A numerical summary of the variables in the data set.
 
 In Figure 1, the numerical summary analyzes each variable's minimum numbers, first quartiles, medians, means, third quartiles, and maximum values. These values give a brief analysis of the differences between the variables. The Hartsfield-Jackson Atlanta International Airport received the most flights (16,837 in total) from New York City while the Charlotte Douglas International Airport received the fewest flights (13,674 in total) from New York City.
+
+## Linear Regression Model
+- **Figure 2.** A numerical summary of the variables in the data set.
+
+In Figure 2, the linear regression model gets a general idea of the relationships between each variable from the dataset. There are 16 carriers that flew to one of the three airports in New York City. Some carriers are more prone to flight delays than others. It did not matter what month of the year a flight took place to cause a delay, but there is a weak relationship between the month and delay. Planes coming from the JFK and LGA airports often face flight delays. The LGA airport has more delays than JFK because its p-value is more significant. The travel distance, scheduled departure and arrival times, actual departure and arrival times, and delays have strong relationships with delays.
+
+## Number of Flights Per Airline
+![Image](https://github.com/SMarbella/Machine-Learning-Flight-Delays-Analysis/blob/main/Graphs/Flights%20Per%20Airline.png)
+- **Figure 3.** The on-time flight performance key indicator shows the number of early flights and delayed flights in each airline.
+
+In Figure 3, most carriers have more early flights than delayed flights. They still have a large proportion of delayed flights. It shows that it is difficult for airline carriers to depart and arrive at airports on time. Alaska Airlines Inc, Hawaiian Airlines Inc, and Mesa Airlines Inc have an approximately even number of delayed flights and early flights. Only the Frontier Airlines Inc and AirTran Airways Corporation carriers had more delayed flights than early flights in 2013. SkyWest Airlines did not have any flights in 2013, meaning that it ceased operations before 2013.
