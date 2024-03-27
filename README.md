@@ -3,7 +3,7 @@ I used the R programming language and machine learning techniques to analyze the
 
 ## Synopsis
 Flight delays are a very important subject for the entire aviation industry around the world because of their association with the loss of revenues. According to the Bureau of Transportation Statistics, over 20% of flights within the US were delayed in 2018, which resulted in a revenue loss of approximately 41 billion USD. These delays cause inconvenience to the airlines and passengers because increased travel time leads to increased food, crew payment, aircraft repositioning, fuel consumption, and lodging costs and added stress among passengers. Flight delays could happen due to several factors, such as air congestion, weather conditions, mechanical problems, the time it takes for all passengers to board the plane, and    an airline's inability to handle demands.
-The flight dataset contains information about all flights that departed in 2013 from airports in New York City to destinations in the United States, Puerto Rico, and the American Virgin Islands. The airports included are NYC, EWR, JFK, and LGA.
+The flight dataset contains information about all flights that departed in 2013 from airports in New York City to destinations in the United States, Puerto Rico, and the American Virgin Islands. This analysis focuses on the following airports in New York City: Newark Liberty International Airport (EWR), John F. Kennedy International Airport (JFK), and LaGuardia Airport (LGA).
 
 ## Table Columns
 -	`year`: All flights departed in 2013.
@@ -39,6 +39,7 @@ The goals of the analysis are to develop a machine learning model that predicts 
 In Figure 1, the numerical summary analyzes each variable's minimum numbers, first quartiles, medians, means, third quartiles, and maximum values. These values give a brief analysis of the differences between the variables. The Hartsfield-Jackson Atlanta International Airport received the most flights (16,837 in total) from New York City while the Charlotte Douglas International Airport received the fewest flights (13,674 in total) from New York City.
 
 ## Linear Regression Model
+![Image](https://github.com/SMarbella/Machine-Learning-Flight-Delays-Analysis/blob/main/Graphs/Linear%20Regression%20Model.png)
 - **Figure 2.** A numerical summary of the variables in the data set.
 
 In Figure 2, the linear regression model gets a general idea of the relationships between each variable from the dataset. There are 16 carriers that flew to one of the three airports in New York City. Some carriers are more prone to flight delays than others. It did not matter what month of the year a flight took place to cause a delay, but there is a weak relationship between the month and delay. Planes coming from the JFK and LGA airports often face flight delays. The LGA airport has more delays than JFK because its p-value is more significant. The travel distance, scheduled departure and arrival times, actual departure and arrival times, and delays have strong relationships with delays.
@@ -48,3 +49,21 @@ In Figure 2, the linear regression model gets a general idea of the relationship
 - **Figure 3.** The on-time flight performance key indicator shows the number of early flights and delayed flights in each airline.
 
 In Figure 3, most carriers have more early flights than delayed flights. They still have a large proportion of delayed flights. It shows that it is difficult for airline carriers to depart and arrive at airports on time. Alaska Airlines Inc, Hawaiian Airlines Inc, and Mesa Airlines Inc have an approximately even number of delayed flights and early flights. Only the Frontier Airlines Inc and AirTran Airways Corporation carriers had more delayed flights than early flights in 2013. SkyWest Airlines did not have any flights in 2013, meaning that it ceased operations before 2013.
+
+## Number of Delayed Flights and Early Flights in New York City
+![Image](https://github.com/SMarbella/Machine-Learning-Flight-Delays-Analysis/blob/main/Graphs/Number%20of%20Delayed%20Flights%20and%20Early%20Flights%20in%20New%20York%20City.png)
+- **Figure 4.** This bar plot shows that there are more early flights in total than delayed flights in New York City.
+
+In Figure 4, out of the total number of flights to New York City in 2013, there were more early flights than delayed flights. Due to a large proportion of delayed flights, the graph indicates that it is quite difficult to maintain a positive on-time flight performance.
+
+## Number of Delayed Flights and Early Flights Per Month 2013
+![Image](https://github.com/SMarbella/Machine-Learning-Flight-Delays-Analysis/blob/main/Graphs/Number%20of%20Delayed%20Flights%20and%20Early%20Flights%20Per%20Month%202013.png)
+- **Figure 5.** This bar plot shows that the winter months have more flight delays than the summer months.
+
+In Figure 5, the proportion of delayed and early flights varied throughout the year. The summer months of June and July have almost equal numbers of early and delayed flights. The fall months of September, October, and November mostly had early flights. September had the fewest number of delayed flights while December had the most delayed flights. The month of December is the only month that had more delayed flights than early flights due to the Christmas holiday season and heavier air traffic levels. The average month in 2013 had approximately 27,300 flights in New York City. February 2013 had the fewest flights approximately 23,600. August 2013 had the most flights approximately 28,800.
+
+## Number of Delayed Flights and Early Flights to Top 10 Destinations from New York City
+![Image](https://github.com/SMarbella/Machine-Learning-Flight-Delays-Analysis/blob/main/Graphs/Number%20of%20Delayed%20Flights%20and%20Early%20Flights%20to%20Top%2010%20Destinations%20from%20New%20York%20City.png)
+- **Figure 6.** This bar plot shows the proportion of delayed flights and early flights in the top 10 destinations from New York City.
+
+In Figure 6, this figure shows the flights traveling from New York City to the top 10 popular destinations in 2013. The Hartsfield Jackson Atlanta International Airport had the most flights from New York City, but it had a large proportion of delayed flights. Some airports, such as the Hartsfield Jackson Atlanta International Airport and Miami International Airport have a large proportion of delayed flights that takes up almost half of their total flights. The Ronald Reagan Washington National Airport had a low proportion of delayed flights compared to the other airports.
